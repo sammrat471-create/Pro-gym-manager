@@ -2,103 +2,106 @@
 <html>
 <head>
 <title>Fitness Guide Hub</title>
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Best fitness tips, workout plans, and gym guides.">
 
-<!-- AdSense -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7365088681767046"
 crossorigin="anonymous"></script>
 
 <style>
-body {
-  font-family: Arial;
-  margin: 0;
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+
+body{
+background:linear-gradient(135deg,#1e3c72,#2a5298);
+color:white;
 }
 
 /* Navbar */
-.navbar {
-  background: #111;
-  padding: 15px;
+.navbar{
+display:flex;
+justify-content:space-between;
+padding:20px 40px;
+background:rgba(0,0,0,0.2);
+backdrop-filter:blur(10px);
 }
 
-.navbar a {
-  color: white;
-  margin: 10px;
-  text-decoration: none;
-  font-weight: bold;
+.navbar a{
+color:white;
+text-decoration:none;
+margin:0 10px;
 }
 
 /* Hero */
-.hero {
-  padding: 60px;
-  text-align: center;
-  background: #28a745;
-  color: white;
+.hero{
+text-align:center;
+padding:100px 20px;
 }
 
-.btn {
-  padding: 12px 25px;
-  background: black;
-  color: white;
-  text-decoration: none;
-  margin-top: 20px;
-  display: inline-block;
+.btn{
+background:#00ffcc;
+color:black;
+padding:12px 30px;
+border-radius:30px;
+text-decoration:none;
 }
 
-/* Section */
-.section {
-  padding: 40px;
-  text-align: center;
+/* Cards */
+.container{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+padding:40px;
 }
 
-.footer {
-  background: #111;
-  color: white;
-  padding: 20px;
-  text-align: center;
+.card{
+background:rgba(255,255,255,0.1);
+padding:25px;
+border-radius:20px;
+width:260px;
+backdrop-filter:blur(15px);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+/* Footer */
+.footer{
+text-align:center;
+padding:20px;
+opacity:0.7;
 }
 </style>
-
 </head>
 
 <body>
 
-<!-- NAVBAR -->
 <div class="navbar">
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="privacy.html">Privacy</a>
-  <a href="contact.html">Contact</a>
+<h2>Fitness Hub</h2>
+<div>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="blog.html">Blog</a>
+<a href="contact.html">Contact</a>
+</div>
 </div>
 
-<!-- HERO -->
 <div class="hero">
-  <h1>Fitness Guide Hub</h1>
-  <p>Your Ultimate Fitness & Gym Guide</p>
-  <a href="about.html" class="btn">Learn More</a>
+<h1>Transform Your Fitness Journey 💪</h1>
+<p>Workout • Diet • Gym Tips</p>
+<a href="blog.html" class="btn">Explore Blog</a>
 </div>
 
-<!-- CONTENT -->
-<div class="section">
-  <h2>Workout Plans</h2>
-  <p>Get the best workout routines for beginners and professionals.</p>
+<div class="container">
+<div class="card"><h3>Workout</h3><p>Best plans for all levels.</p></div>
+<div class="card"><h3>Diet</h3><p>Healthy nutrition tips.</p></div>
+<div class="card"><h3>Tips</h3><p>Improve gym performance.</p></div>
 </div>
 
-<div class="section">
-  <h2>Diet & Nutrition</h2>
-  <p>Follow proper diet plans to achieve your fitness goals faster.</p>
-</div>
-
-<div class="section">
-  <h2>Gym Tips</h2>
-  <p>Learn smart gym techniques and avoid common mistakes.</p>
-</div>
-
-<!-- FOOTER -->
-<div class="footer">
-  <p>© 2026 Fitness Guide Hub</p>
-</div>
+<div class="footer">© 2026 Fitness Hub</div>
 
 </body>
 </html>
