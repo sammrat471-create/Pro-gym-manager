@@ -4,50 +4,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meri Simple Website</title>
-    <!-- CSS file ko link kiya hai -->
+    <title>Alok Sammrat - Mera Digital Showcase</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <!-- Header Section -->
     <header>
-        <h1>Meri Pehli Website</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1 class="logo">Alok Sammrat</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">Mere Baare Mein</a></li>
+                    <li><a href="#showcase">Mera Showcase</a></li>
+                    <li><a href="#contact">Sampark Karein</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <section class="hero">
-            <h2>Swagat Hai!</h2>
-            <p>Yeh meri SAMMRAT GROUP PVT. LTD. dwara banayi gayi ek bahut hi simple website hai.</p>
-            <button id="myButton">Click Me!</button>
-            <p id="message"></p>
-        </section>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Apni Creativity Ko Duniya Ke Saamne Rakhein</h2>
+            <p>Yahan main apne projects, ideas aur kaam ko pesh karta hu.</p>
+            <a href="#showcase" class="btn">Mera Kaam Dekhein</a>
+        </div>
+    </section>
 
-        <section class="content">
-            <h3>Kuch Aur Jaankari</h3>
-            <p>Aap yahan par apni website ka content daal sakte hain. Jaise ki, aapki company ke bare mein, aapki services, ya koi bhi important information.</p>
-            <p>Is website ko SAMMRAT GROUP PVT. LTD. ne banaya hai.</p>
-        </section>
-    </main>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h3>Mere Baare Mein</h3>
+            <p>Namaste! Main Alok Sammrat hu, aur main SAMMRAT GROUP PVT. LTD. ka owner hu. Mujhe naye ideas explore karna aur unhe reality mein badalna pasand hai. Is platform par main apne kuch khaas projects aur achievements share kar raha hu.</p>
+            <p>Meri expertise web development, digital marketing aur innovation mein hai. Main hamesha kuch naya seekhne aur banane ki koshish karta hu.</p>
+        </div>
+    </section>
 
+    <!-- Showcase/Projects Section -->
+    <section id="showcase" class="showcase">
+        <div class="container">
+            <h3>Mera Showcase</h3>
+            <div class="showcase-grid">
+                <!-- Showcase Item 1 -->
+                <div class="showcase-item">
+                    <img src="https://via.placeholder.com/400x250?text=Project+1+Image" alt="Project 1">
+                    <h4>Project Title Ek</h4>
+                    <p>Yeh mere pehle project ka brief description hai. Ismein maine kya kiya aur iska kya uddeshya tha, yahan likhein. Aap ismein technologies ya skills bhi mention kar sakte hain.</p>
+                    <a href="#" class="item-link">Aur Jaanein</a>
+                </div>
+
+                <!-- Showcase Item 2 -->
+                <div class="showcase-item">
+                    <img src="https://via.placeholder.com/400x250?text=Project+2+Image" alt="Project 2">
+                    <h4>Project Title Do</h4>
+                    <p>Yeh mere doosre project ka brief description hai. Batayein ki aapne ismein kaun si challenge solve ki ya kya naya banaya.</p>
+                    <a href="#" class="item-link">Aur Jaanein</a>
+                </div>
+
+                <!-- Showcase Item 3 -->
+                <div class="showcase-item">
+                    <img src="https://via.placeholder.com/400x250?text=Product+Demo+Image" alt="Product Demo">
+                    <h4>Product/Service Naam</h4>
+                    <p>Agar aap koi product ya service showcase kar rahe hain, toh uska description yahan dein. Iske features aur benefits explain karein.</p>
+                    <a href="#" class="item-link">Aur Jaanein</a>
+                </div>
+
+                <!-- Showcase Item 4 (Add more as needed) -->
+                <div class="showcase-item">
+                    <img src="https://via.placeholder.com/400x250?text=Art+Work+Image" alt="Art Work">
+                    <h4>Art Work / Design</h4>
+                    <p>Apne artwork ya design ke baare mein batayein. Inspiration, techniques ya iske peeche ki story yahan share karein.</p>
+                    <a href="#" class="item-link">Aur Jaanein</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h3>Sampark Karein</h3>
+            <p>Agar aapke paas koi sawal hai, ya aap mere saath kaam karna chahte hain, toh kripya mujhse sampark karein!</p>
+            <form action="mailto:your_email@example.com" method="post" enctype="text/plain">
+                <input type="text" name="name" placeholder="Aapka Naam" required>
+                <input type="email" name="email" placeholder="Aapka Email" required>
+                <textarea name="message" rows="5" placeholder="Aapka Sandesh" required></textarea>
+                <button type="submit" class="btn">Sandesh Bhejein</button>
+            </form>
+            <div class="social-links">
+                <a href="https://linkedin.com/in/aloksammrat" target="_blank">LinkedIn</a>
+                <a href="https://twitter.com/aloksammrat983" target="_blank">Twitter</a>
+                <a href="https://github.com/aloksammrat" target="_blank">GitHub</a>
+                <!-- Add more social links as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2026 SAMMRAT GROUP PVT. LTD. Sabhi Adhikar Surakshit.</p>
+        <div class="container">
+            <p>&copy; 2026 Alok Sammrat. Powered by SAMMRAT GROUP PVT. LTD.</p>
+        </div>
     </footer>
 
-    <!-- JavaScript file ko body ke end mein link kiya hai, taaki page pehle load ho jaaye -->
     <script src="script.js"></script>
 </body>
 </html>
-2. style.css (Website ki Styling)
-Yeh file aapki website ko accha dikhane ke liye styles add karegi. Isko index.html wali file ke same folder mein style.css naam se save karein.
+2. style.css (CSS Code)
+Yeh tumhari website ko sundar banayega.
 
-/* Basic Reset */
+/* Basic Reset & Body Styling */
 * {
     margin: 0;
     padding: 0;
@@ -55,156 +124,371 @@ Yeh file aapki website ko accha dikhane ke liye styles add karegi. Isko index.ht
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
     color: #333;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Puri height cover karne ke liye */
+    background-color: #f4f4f4;
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header & Navigation */
 header {
     background: #333;
     color: #fff;
     padding: 1rem 0;
-    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
-header h1 {
-    margin-bottom: 0.5rem;
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #007bff; /* Highlight color */
 }
 
 nav ul {
     list-style: none;
-    padding: 0;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 15px;
+    margin-left: 20px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 400;
+    transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
     color: #007bff;
 }
 
-main {
-    flex: 1; /* Main content ko available space lene ke liye */
-    padding: 20px;
-    max-width: 960px;
-    margin: 20px auto;
-    background: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-}
-
+/* Hero Section */
 .hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://via.placeholder.com/1500x800?text=Hero+Background+Image') no-repeat center center/cover;
+    color: #fff;
     text-align: center;
-    padding: 40px 20px;
-    background-color: #e9ecef;
-    margin-bottom: 20px;
-    border-radius: 5px;
+    padding: 100px 0;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .hero h2 {
-    color: #007bff;
-    margin-bottom: 15px;
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
 }
 
 .hero p {
-    margin-bottom: 20px;
-    font-size: 1.1em;
+    font-size: 1.3rem;
+    margin-bottom: 30px;
 }
 
-.content h3 {
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.content p {
-    margin-bottom: 10px;
-}
-
-button {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
-    border: none;
+.btn {
+    display: inline-block;
+    background: #007bff;
+    color: #fff;
+    padding: 12px 25px;
+    text-decoration: none;
     border-radius: 5px;
-    cursor: pointer;
-    font-size: 1em;
-    transition: background-color 0.3s ease;
+    transition: background 0.3s ease, transform 0.2s ease;
+    font-weight: 600;
 }
 
-button:hover {
-    background-color: #0056b3;
+.btn:hover {
+    background: #0056b3;
+    transform: translateY(-2px);
 }
 
-#message {
-    margin-top: 15px;
-    font-weight: bold;
-    color: #28a745;
+/* General Section Styling */
+section {
+    padding: 80px 0;
+    text-align: center;
 }
 
+section:nth-of-type(even) {
+    background-color: #e9e9e9;
+}
+
+section h3 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+    position: relative;
+    display: inline-block;
+}
+
+section h3::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background-color: #007bff;
+    border-radius: 2px;
+}
+
+/* About Section */
+.about p {
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Showcase Section */
+.showcase-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.showcase-item {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.showcase-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.showcase-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.showcase-item h4 {
+    font-size: 1.5rem;
+    margin: 15px 15px 10px 15px;
+    color: #007bff;
+}
+
+.showcase-item p {
+    font-size: 0.95rem;
+    padding: 0 15px 15px 15px;
+    color: #555;
+}
+
+.showcase-item .item-link {
+    display: inline-block;
+    margin: 0 15px 15px 15px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.showcase-item .item-link:hover {
+    color: #0056b3;
+}
+
+/* Contact Section */
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+
+.contact textarea {
+    resize: vertical;
+}
+
+.contact .btn {
+    align-self: flex-start; /* Button align to left */
+}
+
+.social-links {
+    margin-top: 30px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 15px;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #0056b3;
+}
+
+/* Footer */
 footer {
     background: #333;
-    color: #fff;
+    color: #ccc;
     text-align: center;
-    padding: 1rem 0;
-    margin-top: 20px;
+    padding: 25px 0;
+    font-size: 0.9rem;
 }
-3. script.js (Website ki Functionality)
-Yeh file ek choti si JavaScript functionality add karegi. Isko index.html wali file ke same folder mein script.js naam se save karein.
 
-document.addEventListener('DOMContentLoaded', function() {
-    // Jab pura HTML document load ho jaaye, tab yeh code chalega
+footer p {
+    margin: 0;
+}
 
-    const myButton = document.getElementById('myButton');
-    const messageParagraph = document.getElementById('message');
-
-    if (myButton && messageParagraph) {
-        myButton.addEventListener('click', function() {
-            // Button click hone par message change karega
-            messageParagraph.textContent = 'Aapne button click kiya! Bahut accha!';
-            messageParagraph.style.color = '#dc3545'; // Message ka color change karein
-        });
-    } else {
-        console.log('Button ya message paragraph nahi mila.');
+/* Responsive Design */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
     }
 
-    console.log('Website ka JavaScript load ho gaya hai.');
+    .logo {
+        margin-bottom: 15px;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .showcase-grid {
+        grid-template-columns: 1fr; /* Single column on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    section h3 {
+        font-size: 2rem;
+    }
+}
+3. script.js (JavaScript Code - Optional but Recommended)
+Yeh smooth scrolling ke liye hai.
+
+document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
 });
-Kaise Run Karein:
-Ek naya folder banayein (jaise MeriWebsite).
-Uss folder mein upar diye gaye code ko teen alag files (index.html, style.css, script.js) mein save karein.
-index.html file ko apne web browser (Chrome, Firefox, Edge, etc.) mein double click karke open karein.
-Aapki simple website ready ho jaayegi! Aap ismein apni zaroorat ke hisaab se content aur styles add kar sakte hain. Agar aapko aur kuch chahiye ho to batana.
+
+// Optional: Add a simple animation on scroll for sections
+const sections = document.querySelectorAll('section');
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('fade-in');
+        } else {
+            entry.target.classList.remove('fade-in'); // Optional: remove class when out of view
+        }
+    });
+}, { threshold: 0.1 }); // Trigger when 10% of the section is visible
+
+sections.forEach(section => {
+    observer.observe(section);
+});
+
+// Add CSS for fade-in effect
+// In style.css, add:
+/*
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.fade-in.fade-in { // Double class to increase specificity
+    opacity: 1;
+    transform: translateY(0);
+}
+*/
+Note: script.js ke fade-in effect ke liye, style.css mein diye gaye comments ko CSS rules mein badalna hoga.
+
+Kaise Upyog Karein:
+Folder Banayein: Apne computer par ek naya folder banayein, jaise Mera_Showcase.
+Files Banayein:
+Upar diye gaye HTML code ko copy karein aur index.html naam se Mera_Showcase folder mein save karein.
+Upar diye gaye CSS code ko copy karein aur style.css naam se usi folder mein save karein.
+Upar diye gaye JavaScript code ko copy karein aur script.js naam se usi folder mein save karein.
+Images: showcase-item mein jo src="https://via.placeholder.com..." links hain, unhe apni actual project images ke links se badal dein. Aap images ko Mera_Showcase folder mein bhi rakh sakte hain aur phir src="image1.jpg" aise likh sakte hain. Hero section ki background image bhi badal sakte hain.
+Open Karein: Mera_Showcase folder mein jaakar index.html file par double click karein. Yeh file aapke web browser (Chrome, Firefox, Edge, etc.) mein khul jayegi, aur aapki website ready hogi!
+Customization aur Aage Kya Karein:
+Content Badlein: index.html mein "Alok Sammrat", "Project Title Ek", descriptions, aur contact details ko apni jaankari se badal dein. mailto:your_email@example.com ko apne email address se badalna na bhulein.
+Images Badlein: Placeholder images ko apni asli project images se replace karein.
+Colors/Fonts Badlein: style.css file mein colors (#007bff, #333, etc.) aur fonts ko apni pasand ke hisaab se badal sakte hain.
+Naye Sections Jodein: Agar aapko aur sections chahiye (jaise testimonials, services), toh index.html mein naye <section> tags add kar sakte hain aur style.css mein unhe style kar sakte hain.
+Deploy Karein: Jab aapki website ready ho jaye, toh aap isse online host kar sakte hain. Kuch free hosting options hain jaise GitHub Pages, Netlify, ya Vercel. Iske liye aapko thodi aur steps follow karni padengi, jisme main aapki madad kar sakta hu.
+Yeh ek shuruwaati point hai. Agar aapko koi specific feature add karna hai ya koi section change karna hai, toh mujhe batana. Main aapki poori madad karunga!
 
 
 
-Yaar sirf index.html doo naa akhi mei likh kr
+Bhai yei saab ak script mei nahi hoo sakta hai kya
 
-Theek hai bhai, bilkul! Agar aapko sirf ek hi file mein sab kuch chahiye, toh main HTML, CSS aur JavaScript ko index.html file mein hi embed kar deta hoon. Ismein <style> tags ke andar CSS aur <script> tags ke andar JavaScript hoga.
+Haan, Alok, bilkul ho sakta hai! Agar aapko simplicity chahiye aur ek hi file mein sab kuch rakhna hai, toh hum CSS aur JavaScript ko seedhe index.html file mein embed kar sakte hain.
 
-Yeh raha aapki simple website ka single index.html code:
+Isse aapki website ki saari functionality aur styling ek hi index.html file mein aa jayegi.
+
+index.html (Single File Solution)
+Niche diya gaya code ek hi index.html file mein HTML, CSS aur JavaScript ko combine karta hai.
 
 <!DOCTYPE html>
 <html lang="hi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meri Simple Website (Single File)</title>
+    <title>Alok Sammrat - Mera Digital Showcase</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     
-    <!-- CSS styles yahan hain -->
+    <!-- Embedded CSS starts here -->
     <style>
-        /* Basic Reset */
+        /* Basic Reset & Body Styling */
         * {
             margin: 0;
             padding: 0;
@@ -212,493 +496,406 @@ Yeh raha aapki simple website ka single index.html code:
         }
 
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             line-height: 1.6;
-            background-color: #f4f4f4;
             color: #333;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh; /* Puri height cover karne ke liye */
+            background-color: #f4f4f4;
         }
 
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header & Navigation */
         header {
             background: #333;
             color: #fff;
             padding: 1rem 0;
-            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
         }
 
-        header h1 {
-            margin-bottom: 0.5rem;
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #007bff; /* Highlight color */
         }
 
         nav ul {
             list-style: none;
-            padding: 0;
         }
 
         nav ul li {
             display: inline;
-            margin: 0 15px;
+            margin-left: 20px;
         }
 
         nav ul li a {
             color: #fff;
             text-decoration: none;
-            font-weight: bold;
+            font-weight: 400;
+            transition: color 0.3s ease;
         }
 
         nav ul li a:hover {
             color: #007bff;
-        }
-
-        main {
-            flex: 1; /* Main content ko available space lene ke liye */
-            padding: 20px;
-            max-width: 960px;
-            margin: 20px auto;
-            background: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-
-        .hero {
-            text-align: center;
-            padding: 40px 20px;
-            background-color: #e9ecef;
-            margin-bottom: 20px;
-            border-radius: 5px;
-        }
-
-        .hero h2 {
-            color: #007bff;
-            margin-bottom: 15px;
-        }
-
-        .hero p {
-            margin-bottom: 20px;
-            font-size: 1.1em;
-        }
-
-        .content h3 {
-            color: #333;
-            margin-bottom: 10px;
-        }
-
-        .content p {
-            margin-bottom: 10px;
-        }
-
-        button {
-            background-color: #007bff;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 1em;
-            transition: background-color 0.3s ease;
-        }
-
-        button:hover {
-            background-color: #0056b3;
-        }
-
-        #message {
-            margin-top: 15px;
-            font-weight: bold;
-            color: #28a745;
-        }
-
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1rem 0;
-            margin-top: 20px;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Meri Pehli Website</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section class="hero">
-            <h2>Swagat Hai!</h2>
-            <p>Yeh meri SAMMRAT GROUP PVT. LTD. dwara banayi gayi ek bahut hi simple website hai.</p>
-            <button id="myButton">Click Me!</button>
-            <p id="message"></p>
-        </section>
-
-        <section class="content">
-            <h3>Kuch Aur Jaankari</h3>
-            <p>Aap yahan par apni website ka content daal sakte hain. Jaise ki, aapki company ke bare mein, aapki services, ya koi bhi important information.</p>
-            <p>Is website ko SAMMRAT GROUP PVT. LTD. ne banaya hai.</p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2026 SAMMRAT GROUP PVT. LTD. Sabhi Adhikar Surakshit.</p>
-    </footer>
-
-    <!-- JavaScript code yahan hai, body ke end mein, taaki page pehle load ho jaaye -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Jab pura HTML document load ho jaaye, tab yeh code chalega
-
-            const myButton = document.getElementById('myButton');
-            const messageParagraph = document.getElementById('message');
-
-            if (myButton && messageParagraph) {
-                myButton.addEventListener('click', function() {
-                    // Button click hone par message change karega
-                    messageParagraph.textContent = 'Aapne button click kiya! Bahut accha!';
-                    messageParagraph.style.color = '#dc3545'; // Message ka color change karein
-                });
-            } else {
-                console.log('Button ya message paragraph nahi mila.');
-            }
-
-            console.log('Website ka JavaScript load ho gaya hai.');
-        });
-    </script>
-</body>
-</html>
-Kaise Run Karein:
-Upar diye gaye saare code ko copy karein.
-Ek naya text file banayein, aur usmein yeh code paste kar dein.
-File ko index.html naam se save karein (file type "All Files" ya "Text Document" se "HTML Document" select kar lena).
-Ab, is index.html file ko apne web browser (Chrome, Firefox, Edge, etc.) mein double click karke open karein.
-Aapki simple website ek hi file se chal jaayegi! Agar koi aur help chahiye ho to zaroor batana.
-
-
-
-Bhai yei bana diyei hoo mere baat suno ak aisa website bana naa hai jismei haam apna kooi chizz dekha sakei show case krna hai samjhei naa
-
-Bhai, bilkul samajh gaya! Aapko ek showcase ya portfolio type ki website chahiye jahan aap apni cheezein dikha sakein. Main aapke liye ek aisa index.html file banata hoon jismein aap apne projects, photos, ya koi bhi cheez asani se display kar saken.
-
-Ismein ek header, ek main showcase area jahan aap apne items dalenge, ek "About Me" section aur ek footer hoga. CSS aur JavaScript sab ek hi file mein embedded honge.
-
-index.html (Showcase Website - Single File)
-<!DOCTYPE html>
-<html lang="hi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meri Showcase Website - SAMMRAT GROUP PVT. LTD.</title>
-    
-    <!-- CSS styles yahan hain -->
-    <style>
-        /* Basic Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            background-color: #f0f2f5; /* Thoda light background */
-            color: #333;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-
-        header {
-            background: #2c3e50; /* Darker header */
-            color: #fff;
-            padding: 1.2rem 0;
-            text-align: center;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-        }
-
-        header h1 {
-            margin-bottom: 0.7rem;
-            font-size: 2.5em;
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            gap: 25px; /* Links ke beech space */
-        }
-
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1.1em;
-            padding: 5px 10px;
-            transition: color 0.3s ease, background-color 0.3s ease;
-            border-radius: 4px;
-        }
-
-        nav ul li a:hover {
-            color: #2c3e50;
-            background-color: #ecf0f1; /* Light hover background */
-        }
-
-        main {
-            flex: 1;
-            padding: 30px 20px;
-            max-width: 1200px; /* Thodi zyada width */
-            margin: 30px auto;
-            background: #fff;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-        }
-
-        section {
-            margin-bottom: 40px;
-            padding: 20px;
-            border-bottom: 1px solid #eee;
-        }
-
-        section:last-of-type {
-            border-bottom: none;
-        }
-
-        h2 {
-            text-align: center;
-            color: #007bff; /* Blue heading */
-            margin-bottom: 30px;
-            font-size: 2.2em;
         }
 
         /* Hero Section */
         .hero {
-            background-color: #e9f5ff;
-            padding: 60px 20px;
-            border-radius: 8px;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://via.placeholder.com/1500x800?text=Hero+Background+Image') no-repeat center center/cover;
+            color: #fff;
             text-align: center;
-            margin-bottom: 40px;
+            padding: 100px 0;
+            height: 100vh; /* Full viewport height */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .hero h2 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            font-weight: 700;
         }
 
         .hero p {
-            font-size: 1.2em;
-            color: #555;
-            margin-top: 15px;
+            font-size: 1.3rem;
+            margin-bottom: 30px;
         }
 
-        /* Showcase Section */
-        .portfolio-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
-            gap: 30px; /* Items ke beech space */
-        }
-
-        .portfolio-item {
-            background-color: #fff;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            text-align: center;
-            padding-bottom: 20px; /* Text ke liye padding */
-        }
-
-        .portfolio-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-        }
-
-        .portfolio-item img {
-            width: 100%;
-            height: 200px; /* Fixed height for images */
-            object-fit: cover; /* Images ko crop karega taaki fit ho jaayen */
-            display: block;
-            margin-bottom: 15px;
-            border-bottom: 1px solid #eee;
-        }
-
-        .portfolio-item h3 {
-            color: #2c3e50;
-            margin-bottom: 10px;
-            font-size: 1.5em;
-            padding: 0 15px;
-        }
-
-        .portfolio-item p {
-            font-size: 0.95em;
-            color: #666;
-            margin-bottom: 15px;
-            padding: 0 15px;
-        }
-
-        .portfolio-item .view-details {
+        .btn {
             display: inline-block;
-            background-color: #28a745; /* Green button */
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
+            background: #007bff;
+            color: #fff;
+            padding: 12px 25px;
             text-decoration: none;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
+            border-radius: 5px;
+            transition: background 0.3s ease, transform 0.2s ease;
+            font-weight: 600;
         }
 
-        .portfolio-item .view-details:hover {
-            background-color: #218838;
+        .btn:hover {
+            background: #0056b3;
+            transform: translateY(-2px);
+        }
+
+        /* General Section Styling */
+        section {
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        section:nth-of-type(even) {
+            background-color: #e9e9e9;
+        }
+
+        section h3 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: #333;
+            position: relative;
+            display: inline-block;
+        }
+
+        section h3::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: -10px;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 4px;
+            background-color: #007bff;
+            border-radius: 2px;
         }
 
         /* About Section */
         .about p {
-            text-align: center;
-            font-size: 1.1em;
-            color: #555;
             max-width: 800px;
-            margin: 0 auto;
+            margin: 0 auto 20px auto;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        /* Showcase Section */
+        .showcase-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .showcase-item {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            overflow: hidden;
+            text-align: left;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .showcase-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .showcase-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .showcase-item h4 {
+            font-size: 1.5rem;
+            margin: 15px 15px 10px 15px;
+            color: #007bff;
+        }
+
+        .showcase-item p {
+            font-size: 0.95rem;
+            padding: 0 15px 15px 15px;
+            color: #555;
+        }
+
+        .showcase-item .item-link {
+            display: inline-block;
+            margin: 0 15px 15px 15px;
+            color: #007bff;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .showcase-item .item-link:hover {
+            color: #0056b3;
         }
 
         /* Contact Section */
-        .contact p {
-            text-align: center;
-            font-size: 1.1em;
-            color: #555;
-            margin-bottom: 10px;
+        .contact form {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 40px;
         }
-        .contact a {
+
+        .contact input[type="text"],
+        .contact input[type="email"],
+        .contact textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1rem;
+        }
+
+        .contact textarea {
+            resize: vertical;
+        }
+
+        .contact .btn {
+            align-self: flex-start; /* Button align to left */
+        }
+
+        .social-links {
+            margin-top: 30px;
+        }
+
+        .social-links a {
+            display: inline-block;
+            margin: 0 15px;
             color: #007bff;
             text-decoration: none;
-        }
-        .contact a:hover {
-            text-decoration: underline;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
         }
 
+        .social-links a:hover {
+            color: #0056b3;
+        }
+
+        /* Footer */
         footer {
-            background: #2c3e50;
-            color: #fff;
+            background: #333;
+            color: #ccc;
             text-align: center;
-            padding: 1.5rem 0;
-            margin-top: 40px;
-            font-size: 0.9em;
+            padding: 25px 0;
+            font-size: 0.9rem;
         }
 
-        /* Responsive adjustments */
+        footer p {
+            margin: 0;
+        }
+
+        /* Responsive Design */
         @media (max-width: 768px) {
-            header h1 {
-                font-size: 2em;
-            }
-            nav ul {
+            header .container {
                 flex-direction: column;
-                gap: 10px;
             }
-            nav ul li a {
-                padding: 8px 15px;
+
+            .logo {
+                margin-bottom: 15px;
             }
-            .portfolio-grid {
-                grid-template-columns: 1fr; /* Single column on small screens */
+
+            nav ul li {
+                margin: 0 10px;
             }
-            main {
-                margin: 20px auto;
-                padding: 15px;
+
+            .hero h2 {
+                font-size: 2.5rem;
             }
-            h2 {
-                font-size: 1.8em;
+
+            .hero p {
+                font-size: 1rem;
             }
+
+            .showcase-grid {
+                grid-template-columns: 1fr; /* Single column on smaller screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h2 {
+                font-size: 2rem;
+            }
+
+            section h3 {
+                font-size: 2rem;
+            }
+        }
+        /* CSS for fade-in effect (from script.js) */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in.fade-in { /* Double class to increase specificity */
+            opacity: 1;
+            transform: translateY(0);
         }
     </style>
+    <!-- Embedded CSS ends here -->
 </head>
 <body>
+
+    <!-- Header Section -->
     <header>
-        <h1>Meri Digital Showcase</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#showcase">Showcase</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1 class="logo">Alok Sammrat</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">Mere Baare Mein</a></li>
+                    <li><a href="#showcase">Mera Showcase</a></li>
+                    <li><a href="#contact">Sampark Karein</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <section id="home" class="hero">
-            <h2>Swagat Hai Meri Duniya Mein!</h2>
-            <p>Yahan main apne kuch khaas kaam, projects, aur creations dikha raha hoon.</p>
-            <p>Is website ko Jarvis AI ne SAMMRAT GROUP PVT. LTD. ke liye banaya hai.</p>
-        </section>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Apni Creativity Ko Duniya Ke Saamne Rakhein</h2>
+            <p>Yahan main apne projects, ideas aur kaam ko pesh karta hu.</p>
+            <a href="#showcase" class="btn">Mera Kaam Dekhein</a>
+        </div>
+    </section>
 
-        <section id="showcase">
-            <h2>Hamare Karya (My Showcase)</h2>
-            <div class="portfolio-grid">
-                <!-- Item 1 -->
-                <div class="portfolio-item">
-                    <img src="https://via.placeholder.com/400x200?text=Project+Image+1" alt="Project 1">
-                    <h3>Project Title One</h3>
-                    <p>Yeh mera pehla project hai, jismein maine ek naya design concept explore kiya hai. Ismein modern UI/UX principles ka istemal kiya gaya hai.</p>
-                    <a href="#" class="view-details" onclick="showAlert('Project Title One')">Details Dekhein</a>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h3>Mere Baare Mein</h3>
+            <p>Namaste! Main Alok Sammrat hu, aur main SAMMRAT GROUP PVT. LTD. ka owner hu. Mujhe naye ideas explore karna aur unhe reality mein badalna pasand hai. Is platform par main apne kuch khaas projects aur achievements share kar raha hu.</p>
+            <p>Meri expertise web development, digital marketing aur innovation mein hai. Main hamesha kuch naya seekhne aur banane ki koshish karta hu.</p>
+        </div>
+    </section>
+
+    <!-- Showcase/Projects Section -->
+    <section id="showcase" class="showcase">
+        <div class="container">
+            <h3>Mera Showcase</h3>
+            <div class="showcase-grid">
+                <!-- Showcase Item 1 -->
+                <div class="showcase-item">
+                    <img src="https://via.placeholder.com/400x250?text=Project+1+Image" alt="Project 1">
+                    <h4>Project Title Ek</h4>
+                    <p>Yeh mere pehle project ka brief description hai. Ismein maine kya kiya aur iska kya uddeshya tha, yahan likhein. Aap ismein technologies ya skills bhi mention kar sakte hain.</p>
+                    <a href="#" class="item-link">Aur Jaanein</a>
                 </div>
 
-                <!-- Item 2 -->
-                <div class="portfolio-item">
-                    <img src="https://via.placeholder.com/400x200?text=Project+Image+2" alt="Project 2">
-                    <h3>Creative Design Concept</h3>
-                    <p>Ek innovative design concept jo user engagement ko badhane ke liye banaya gaya hai. Ismein minimalist approach rakha gaya hai.</p>
-                    <a href="#" class="view-details" onclick="showAlert('Creative Design Concept')">Details Dekhein</a>
+                <!-- Showcase Item 2 -->
+                <div class="showcase-item">
+                    <img src="https://via.placeholder.com/400x250?text=Project+2+Image" alt="Project 2">
+                    <h4>Project Title Do</h4>
+                    <p>Yeh mere doosre project ka brief description hai. Batayein ki aapne ismein kaun si challenge solve ki ya kya naya banaya.</p>
+                    <a href="#" class="item-link">Aur Jaanein</a>
                 </div>
 
-                <!-- Item 3 -->
-                <div class="portfolio-item">
-                    <img src="https://via.placeholder.com/400x200?text=My+Art+Piece" alt="Art Piece">
-                    <h3>Meri Kala Ka Ek Namuna</h3>
-                    <p>Yeh ek digital art piece hai jo maine banaya hai. Ismein rangon aur aakaron ka ek unique blend dikhaya gaya hai.</p>
-                    <a href="#" class="view-details" onclick="showAlert('Meri Kala Ka Ek Namuna')">Details Dekhein</a>
+                <!-- Showcase Item 3 -->
+                <div class="showcase-item">
+                    <img src="https://via.placeholder.com/400x250?text=Product+Demo+Image" alt="Product Demo">
+                    <h4>Product/Service Naam</h4>
+                    <p>Agar aap koi product ya service showcase kar rahe hain, toh uska description yahan dein. Iske features aur benefits explain karein.</p>
+                    <a href="#" class="item-link">Aur Jaanein</a>
                 </div>
 
-                <!-- Item 4 (Aap aur bhi items add kar sakte hain) -->
-                <div class="portfolio-item">
-                    <img src="https://via.placeholder.com/400x200?text=Your+Item+4" alt="Item 4">
-                    <h3>New Idea Showcase</h3>
-                    <p>Ek naya vichar ya product jise main yahan demonstrate karna chahta hoon. Iski khaasiyat aur benefits yahan par hain.</p>
-                    <a href="#" class="view-details" onclick="showAlert('New Idea Showcase')">Details Dekhein</a>
+                <!-- Showcase Item 4 (Add more as needed) -->
+                <div class="showcase-item">
+                    <img src="https://via.placeholder.com/400x250?text=Art+Work+Image" alt="Art Work">
+                    <h4>Art Work / Design</h4>
+                    <p>Apne artwork ya design ke baare mein batayein. Inspiration, techniques ya iske peeche ki story yahan share karein.</p>
+                    <a href="#" class="item-link">Aur Jaanein</a>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="about" class="about">
-            <h2>Mere Baare Mein</h2>
-            <p>Main ek passionate creator hoon jo naye ideas aur projects par kaam karna pasand karta hoon. Mera maqsad innovative solutions provide karna hai. Is website ke through main apne kaam ko duniya ke saamne pesh karna chahta hoon.</p>
-            <p>Yeh website SAMMRAT GROUP PVT. LTD. dwara banayi gayi Jarvis AI ki madad se tayyar ki gayi hai.</p>
-        </section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h3>Sampark Karein</h3>
+            <p>Agar aapke paas koi sawal hai, ya aap mere saath kaam karna chahte hain, toh kripya mujhse sampark karein!</p>
+            <form action="mailto:your_email@example.com" method="post" enctype="text/plain">
+                <input type="text" name="name" placeholder="Aapka Naam" required>
+                <input type="email" name="email" placeholder="Aapka Email" required>
+                <textarea name="message" rows="5" placeholder="Aapka Sandesh" required></textarea>
+                <button type="submit" class="btn">Sandesh Bhejein</button>
+            </form>
+            <div class="social-links">
+                <a href="https://linkedin.com/in/aloksammrat" target="_blank">LinkedIn</a>
+                <a href="https://twitter.com/aloksammrat983" target="_blank">Twitter</a>
+                <a href="https://github.com/aloksammrat" target="_blank">GitHub</a>
+                <!-- Add more social links as needed -->
+            </div>
+        </div>
+    </section>
 
-        <section id="contact" class="contact">
-            <h2>Mujhse Sampark Karein</h2>
-            <p>Agar aapko mere kaam mein ruchi hai ya aap kisi project ke liye discuss karna chahte hain, to mujhse contact karein:</p>
-            <p>Email: <a href="mailto:your_email@example.com">your_email@example.com</a></p>
-            <p>Phone: <a href="tel:+919876543210">+91 98765 43210</a></p>
-            <p>Website: <a href="https://sammratgroup.gt.tc">sammratgroup.gt.tc</a></p>
-        </section>
-    </main>
-
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2026 Meri Digital Showcase. Powered by SAMMRAT GROUP PVT. LTD. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2026 Alok Sammrat. Powered by SAMMRAT GROUP PVT. LTD.</p>
+        </div>
     </footer>
 
-    <!-- JavaScript code yahan hai -->
+    <!-- Embedded JavaScript starts here -->
     <script>
-        // Simple function to show an alert when 'Details Dekhein' is clicked
-        function showAlert(itemName) {
-            alert('Aapne "' + itemName + '" ke details dekhne ke liye click kiya hai! Yahan aur jaankari aayegi.');
-        }
-
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('nav ul li a').forEach(anchor => {
+        document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
 
@@ -708,7 +905,23 @@ index.html (Showcase Website - Single File)
             });
         });
 
-        console.log('Showcase Website ka JavaScript load ho gaya hai.');
+        // Optional: Add a simple animation on scroll for sections
+        const sections = document.querySelectorAll('section');
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                } else {
+                    entry.target.classList.remove('fade-in'); // Optional: remove class when out of view
+                }
+            });
+        }, { threshold: 0.1 }); // Trigger when 10% of the section is visible
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
     </script>
+    <!-- Embedded JavaScript ends here -->
 </body>
-    </html>
+</html>
