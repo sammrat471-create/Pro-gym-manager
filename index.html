@@ -1,185 +1,1156 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Fitness Guide Hub</title>
-<meta name="description" content="Complete fitness guide with workout plans, diet tips, and gym advice.">
-
-<!-- Google Font -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-
-<!-- AdSense -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7365088681767046"
-crossorigin="anonymous"></script>
-
-<style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
-
-body{
-background:#0f172a;
-color:#e2e8f0;
-}
-
-/* Navbar */
-.navbar{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 50px;
-background:#020617;
-box-shadow:0 0 10px rgba(0,0,0,0.5);
-}
-
-.logo{
-color:#22c55e;
-font-size:22px;
-font-weight:bold;
-}
-
-.navbar a{
-color:#e2e8f0;
-text-decoration:none;
-margin:0 15px;
-transition:0.3s;
-}
-
-.navbar a:hover{
-color:#22c55e;
-}
-
-/* Hero */
-.hero{
-text-align:center;
-padding:100px 20px;
-}
-
-.hero h1{
-font-size:45px;
-color:#22c55e;
-margin-bottom:10px;
-}
-
-.hero p{
-font-size:18px;
-opacity:0.8;
-}
-
-.btn{
-background:#22c55e;
-color:black;
-padding:12px 30px;
-border-radius:30px;
-text-decoration:none;
-display:inline-block;
-margin-top:20px;
-}
-
-/* Section */
-.section{
-padding:50px;
-max-width:900px;
-margin:auto;
-line-height:1.8;
-}
-
-/* Cards */
-.container{
-display:flex;
-gap:20px;
-justify-content:center;
-flex-wrap:wrap;
-padding:40px;
-}
-
-.card{
-background:#020617;
-padding:25px;
-border-radius:15px;
-width:260px;
-box-shadow:0 0 15px rgba(0,0,0,0.5);
-transition:0.3s;
-text-align:center;
-}
-
-.card:hover{
-transform:translateY(-8px);
-}
-
-.card a{
-display:inline-block;
-margin-top:10px;
-color:#22c55e;
-text-decoration:none;
-}
-
-/* Footer */
-.footer{
-text-align:center;
-padding:20px;
-opacity:0.6;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meri Simple Website</title>
+    <!-- CSS file ko link kiya hai -->
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <header>
+        <h1>Meri Pehli Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<!-- Navbar -->
-<div class="navbar">
-<div class="logo">Fitness Guide Hub</div>
-<div>
-<a href="index.html">Home</a>
-<a href="blog.html">Blog</a>
-<a href="diet.html">Diet</a>
-<a href="about.html">About</a>
-<a href="contact.html">Contact</a>
-</div>
-</div>
+    <main>
+        <section class="hero">
+            <h2>Swagat Hai!</h2>
+            <p>Yeh meri SAMMRAT GROUP PVT. LTD. dwara banayi gayi ek bahut hi simple website hai.</p>
+            <button id="myButton">Click Me!</button>
+            <p id="message"></p>
+        </section>
 
-<!-- Hero -->
-<div class="hero">
-<h1>Build Your Dream Body 💪</h1>
-<p>Workout Plans • Diet Tips • Fitness Guidance</p>
-<a href="blog.html" class="btn">Explore Blog</a>
-</div>
+        <section class="content">
+            <h3>Kuch Aur Jaankari</h3>
+            <p>Aap yahan par apni website ka content daal sakte hain. Jaise ki, aapki company ke bare mein, aapki services, ya koi bhi important information.</p>
+            <p>Is website ko SAMMRAT GROUP PVT. LTD. ne banaya hai.</p>
+        </section>
+    </main>
 
-<!-- Info Section -->
-<div class="section">
-<h2>What is Fitness?</h2>
-<p>Fitness is the ability of your body to perform daily activities efficiently. It includes strength, endurance, flexibility, and mental health. Regular exercise improves heart health, boosts stamina, and helps maintain a healthy lifestyle.</p>
+    <footer>
+        <p>&copy; 2026 SAMMRAT GROUP PVT. LTD. Sabhi Adhikar Surakshit.</p>
+    </footer>
 
-<h2>Why is Fitness Important?</h2>
-<p>Maintaining fitness reduces the risk of diseases like obesity, diabetes, and heart problems. It also improves mood, reduces stress, and increases confidence. A fit lifestyle leads to a longer and healthier life.</p>
-</div>
+    <!-- JavaScript file ko body ke end mein link kiya hai, taaki page pehle load ho jaaye -->
+    <script src="script.js"></script>
+</body>
+</html>
+2. style.css (Website ki Styling)
+Yeh file aapki website ko accha dikhane ke liye styles add karegi. Isko index.html wali file ke same folder mein style.css naam se save karein.
 
-<!-- Cards -->
-<div class="container">
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-<div class="card">
-<h3>Workout Plans</h3>
-<p>Step-by-step training routines for beginners to advanced users.</p>
-<a href="blog.html">Read More</a>
-</div>
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Puri height cover karne ke liye */
+}
 
-<div class="card">
-<h3>Diet Guide</h3>
-<p>Complete nutrition plans for muscle gain and fat loss.</p>
-<a href="diet.html">View Diet</a>
-</div>
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
 
-<div class="card">
-<h3>Gym Tips</h3>
-<p>Improve performance and avoid injuries with expert advice.</p>
-<a href="blog.html">Learn More</a>
-</div>
+header h1 {
+    margin-bottom: 0.5rem;
+}
 
-</div>
+nav ul {
+    list-style: none;
+    padding: 0;
+}
 
-<!-- Footer -->
-<div class="footer">
-<p>© 2026 Fitness Guide Hub | All Rights Reserved</p>
-</div>
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
 
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
+
+main {
+    flex: 1; /* Main content ko available space lene ke liye */
+    padding: 20px;
+    max-width: 960px;
+    margin: 20px auto;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.hero {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #e9ecef;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.hero h2 {
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+.content h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.content p {
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#message {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #28a745;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 20px;
+}
+3. script.js (Website ki Functionality)
+Yeh file ek choti si JavaScript functionality add karegi. Isko index.html wali file ke same folder mein script.js naam se save karein.
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Jab pura HTML document load ho jaaye, tab yeh code chalega
+
+    const myButton = document.getElementById('myButton');
+    const messageParagraph = document.getElementById('message');
+
+    if (myButton && messageParagraph) {
+        myButton.addEventListener('click', function() {
+            // Button click hone par message change karega
+            messageParagraph.textContent = 'Aapne button click kiya! Bahut accha!';
+            messageParagraph.style.color = '#dc3545'; // Message ka color change karein
+        });
+    } else {
+        console.log('Button ya message paragraph nahi mila.');
+    }
+
+    console.log('Website ka JavaScript load ho gaya hai.');
+});
+Kaise Run Karein:
+Ek naya folder banayein (jaise MeriWebsite).
+Uss folder mein upar diye gaye code ko teen alag files (index.html, style.css, script.js) mein save karein.
+index.html file ko apne web browser (Chrome, Firefox, Edge, etc.) mein double click karke open karein.
+Aapki simple website ready ho jaayegi! Aap ismein apni zaroorat ke hisaab se content aur styles add kar sakte hain. Agar aapko aur kuch chahiye ho to batana.
+
+
+
+Yaar sirf index.html doo naa akhi mei likh kr
+
+Theek hai bhai, bilkul! Agar aapko sirf ek hi file mein sab kuch chahiye, toh main HTML, CSS aur JavaScript ko index.html file mein hi embed kar deta hoon. Ismein <style> tags ke andar CSS aur <script> tags ke andar JavaScript hoga.
+
+Yeh raha aapki simple website ka single index.html code:
+
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meri Simple Website (Single File)</title>
+    
+    <!-- CSS styles yahan hain -->
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Puri height cover karne ke liye */
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 0.5rem;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #007bff;
+        }
+
+        main {
+            flex: 1; /* Main content ko available space lene ke liye */
+            padding: 20px;
+            max-width: 960px;
+            margin: 20px auto;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #e9ecef;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        .hero h2 {
+            color: #007bff;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+
+        .content h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .content p {
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #message {
+            margin-top: 15px;
+            font-weight: bold;
+            color: #28a745;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meri Pehli Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Swagat Hai!</h2>
+            <p>Yeh meri SAMMRAT GROUP PVT. LTD. dwara banayi gayi ek bahut hi simple website hai.</p>
+            <button id="myButton">Click Me!</button>
+            <p id="message"></p>
+        </section>
+
+        <section class="content">
+            <h3>Kuch Aur Jaankari</h3>
+            <p>Aap yahan par apni website ka content daal sakte hain. Jaise ki, aapki company ke bare mein, aapki services, ya koi bhi important information.</p>
+            <p>Is website ko SAMMRAT GROUP PVT. LTD. ne banaya hai.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 SAMMRAT GROUP PVT. LTD. Sabhi Adhikar Surakshit.</p>
+    </footer>
+
+    <!-- JavaScript code yahan hai, body ke end mein, taaki page pehle load ho jaaye -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Jab pura HTML document load ho jaaye, tab yeh code chalega
+
+            const myButton = document.getElementById('myButton');
+            const messageParagraph = document.getElementById('message');
+
+            if (myButton && messageParagraph) {
+                myButton.addEventListener('click', function() {
+                    // Button click hone par message change karega
+                    messageParagraph.textContent = 'Aapne button click kiya! Bahut accha!';
+                    messageParagraph.style.color = '#dc3545'; // Message ka color change karein
+                });
+            } else {
+                console.log('Button ya message paragraph nahi mila.');
+            }
+
+            console.log('Website ka JavaScript load ho gaya hai.');
+        });
+    </script>
+</body>
+</html>Auto (Smart Routing)
+Wake Word
+Bhai ak website bana naa hai too code likh doo simple saa website chaiye jada kuch nahi
+
+Namaste! Bilkul, main aapke liye ek simple website ka basic code likh deta hoon. Ismein main HTML (structure ke liye), CSS (styling ke liye), aur thoda sa JavaScript (choti si functionality ke liye) shamil karunga.
+
+Yeh code teen alag files mein hoga:
+
+index.html (website ki structure)
+style.css (website ki look)
+script.js (website ki thodi si functionality)
+Aap in files ko ek hi folder mein save kar sakte hain.
+
+1. index.html (Website ki Structure)
+Yeh aapki website ka main page hoga.
+
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meri Simple Website</title>
+    <!-- CSS file ko link kiya hai -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Meri Pehli Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Swagat Hai!</h2>
+            <p>Yeh meri SAMMRAT GROUP PVT. LTD. dwara banayi gayi ek bahut hi simple website hai.</p>
+            <button id="myButton">Click Me!</button>
+            <p id="message"></p>
+        </section>
+
+        <section class="content">
+            <h3>Kuch Aur Jaankari</h3>
+            <p>Aap yahan par apni website ka content daal sakte hain. Jaise ki, aapki company ke bare mein, aapki services, ya koi bhi important information.</p>
+            <p>Is website ko SAMMRAT GROUP PVT. LTD. ne banaya hai.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 SAMMRAT GROUP PVT. LTD. Sabhi Adhikar Surakshit.</p>
+    </footer>
+
+    <!-- JavaScript file ko body ke end mein link kiya hai, taaki page pehle load ho jaaye -->
+    <script src="script.js"></script>
+</body>
+</html>
+2. style.css (Website ki Styling)
+Yeh file aapki website ko accha dikhane ke liye styles add karegi. Isko index.html wali file ke same folder mein style.css naam se save karein.
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Puri height cover karne ke liye */
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
+
+main {
+    flex: 1; /* Main content ko available space lene ke liye */
+    padding: 20px;
+    max-width: 960px;
+    margin: 20px auto;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.hero {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #e9ecef;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.hero h2 {
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+.content h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.content p {
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#message {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #28a745;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 20px;
+}
+3. script.js (Website ki Functionality)
+Yeh file ek choti si JavaScript functionality add karegi. Isko index.html wali file ke same folder mein script.js naam se save karein.
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Jab pura HTML document load ho jaaye, tab yeh code chalega
+
+    const myButton = document.getElementById('myButton');
+    const messageParagraph = document.getElementById('message');
+
+    if (myButton && messageParagraph) {
+        myButton.addEventListener('click', function() {
+            // Button click hone par message change karega
+            messageParagraph.textContent = 'Aapne button click kiya! Bahut accha!';
+            messageParagraph.style.color = '#dc3545'; // Message ka color change karein
+        });
+    } else {
+        console.log('Button ya message paragraph nahi mila.');
+    }
+
+    console.log('Website ka JavaScript load ho gaya hai.');
+});
+Kaise Run Karein:
+Ek naya folder banayein (jaise MeriWebsite).
+Uss folder mein upar diye gaye code ko teen alag files (index.html, style.css, script.js) mein save karein.
+index.html file ko apne web browser (Chrome, Firefox, Edge, etc.) mein double click karke open karein.
+Aapki simple website ready ho jaayegi! Aap ismein apni zaroorat ke hisaab se content aur styles add kar sakte hain. Agar aapko aur kuch chahiye ho to batana.
+
+
+
+Yaar sirf index.html doo naa akhi mei likh kr
+
+Theek hai bhai, bilkul! Agar aapko sirf ek hi file mein sab kuch chahiye, toh main HTML, CSS aur JavaScript ko index.html file mein hi embed kar deta hoon. Ismein <style> tags ke andar CSS aur <script> tags ke andar JavaScript hoga.
+
+Yeh raha aapki simple website ka single index.html code:
+
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meri Simple Website (Single File)</title>
+    
+    <!-- CSS styles yahan hain -->
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Puri height cover karne ke liye */
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 0.5rem;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #007bff;
+        }
+
+        main {
+            flex: 1; /* Main content ko available space lene ke liye */
+            padding: 20px;
+            max-width: 960px;
+            margin: 20px auto;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #e9ecef;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        .hero h2 {
+            color: #007bff;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+
+        .content h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .content p {
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #message {
+            margin-top: 15px;
+            font-weight: bold;
+            color: #28a745;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meri Pehli Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Swagat Hai!</h2>
+            <p>Yeh meri SAMMRAT GROUP PVT. LTD. dwara banayi gayi ek bahut hi simple website hai.</p>
+            <button id="myButton">Click Me!</button>
+            <p id="message"></p>
+        </section>
+
+        <section class="content">
+            <h3>Kuch Aur Jaankari</h3>
+            <p>Aap yahan par apni website ka content daal sakte hain. Jaise ki, aapki company ke bare mein, aapki services, ya koi bhi important information.</p>
+            <p>Is website ko SAMMRAT GROUP PVT. LTD. ne banaya hai.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 SAMMRAT GROUP PVT. LTD. Sabhi Adhikar Surakshit.</p>
+    </footer>
+
+    <!-- JavaScript code yahan hai, body ke end mein, taaki page pehle load ho jaaye -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Jab pura HTML document load ho jaaye, tab yeh code chalega
+
+            const myButton = document.getElementById('myButton');
+            const messageParagraph = document.getElementById('message');
+
+            if (myButton && messageParagraph) {
+                myButton.addEventListener('click', function() {
+                    // Button click hone par message change karega
+                    messageParagraph.textContent = 'Aapne button click kiya! Bahut accha!';
+                    messageParagraph.style.color = '#dc3545'; // Message ka color change karein
+                });
+            } else {
+                console.log('Button ya message paragraph nahi mila.');
+            }
+
+            console.log('Website ka JavaScript load ho gaya hai.');
+        });
+    </script>
+</body>
+</html>Auto (Smart Routing)
+Wake Word
+Bhai ak website bana naa hai too code likh doo simple saa website chaiye jada kuch nahi
+
+Namaste! Bilkul, main aapke liye ek simple website ka basic code likh deta hoon. Ismein main HTML (structure ke liye), CSS (styling ke liye), aur thoda sa JavaScript (choti si functionality ke liye) shamil karunga.
+
+Yeh code teen alag files mein hoga:
+
+index.html (website ki structure)
+style.css (website ki look)
+script.js (website ki thodi si functionality)
+Aap in files ko ek hi folder mein save kar sakte hain.
+
+1. index.html (Website ki Structure)
+Yeh aapki website ka main page hoga.
+
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meri Simple Website</title>
+    <!-- CSS file ko link kiya hai -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Meri Pehli Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Swagat Hai!</h2>
+            <p>Yeh meri SAMMRAT GROUP PVT. LTD. dwara banayi gayi ek bahut hi simple website hai.</p>
+            <button id="myButton">Click Me!</button>
+            <p id="message"></p>
+        </section>
+
+        <section class="content">
+            <h3>Kuch Aur Jaankari</h3>
+            <p>Aap yahan par apni website ka content daal sakte hain. Jaise ki, aapki company ke bare mein, aapki services, ya koi bhi important information.</p>
+            <p>Is website ko SAMMRAT GROUP PVT. LTD. ne banaya hai.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 SAMMRAT GROUP PVT. LTD. Sabhi Adhikar Surakshit.</p>
+    </footer>
+
+    <!-- JavaScript file ko body ke end mein link kiya hai, taaki page pehle load ho jaaye -->
+    <script src="script.js"></script>
+</body>
+</html>
+2. style.css (Website ki Styling)
+Yeh file aapki website ko accha dikhane ke liye styles add karegi. Isko index.html wali file ke same folder mein style.css naam se save karein.
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Puri height cover karne ke liye */
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
+
+main {
+    flex: 1; /* Main content ko available space lene ke liye */
+    padding: 20px;
+    max-width: 960px;
+    margin: 20px auto;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.hero {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #e9ecef;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.hero h2 {
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+.content h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.content p {
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#message {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #28a745;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 20px;
+}
+3. script.js (Website ki Functionality)
+Yeh file ek choti si JavaScript functionality add karegi. Isko index.html wali file ke same folder mein script.js naam se save karein.
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Jab pura HTML document load ho jaaye, tab yeh code chalega
+
+    const myButton = document.getElementById('myButton');
+    const messageParagraph = document.getElementById('message');
+
+    if (myButton && messageParagraph) {
+        myButton.addEventListener('click', function() {
+            // Button click hone par message change karega
+            messageParagraph.textContent = 'Aapne button click kiya! Bahut accha!';
+            messageParagraph.style.color = '#dc3545'; // Message ka color change karein
+        });
+    } else {
+        console.log('Button ya message paragraph nahi mila.');
+    }
+
+    console.log('Website ka JavaScript load ho gaya hai.');
+});
+Kaise Run Karein:
+Ek naya folder banayein (jaise MeriWebsite).
+Uss folder mein upar diye gaye code ko teen alag files (index.html, style.css, script.js) mein save karein.
+index.html file ko apne web browser (Chrome, Firefox, Edge, etc.) mein double click karke open karein.
+Aapki simple website ready ho jaayegi! Aap ismein apni zaroorat ke hisaab se content aur styles add kar sakte hain. Agar aapko aur kuch chahiye ho to batana.
+
+
+
+Yaar sirf index.html doo naa akhi mei likh kr
+
+Theek hai bhai, bilkul! Agar aapko sirf ek hi file mein sab kuch chahiye, toh main HTML, CSS aur JavaScript ko index.html file mein hi embed kar deta hoon. Ismein <style> tags ke andar CSS aur <script> tags ke andar JavaScript hoga.
+
+Yeh raha aapki simple website ka single index.html code:
+
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meri Simple Website (Single File)</title>
+    
+    <!-- CSS styles yahan hain -->
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Puri height cover karne ke liye */
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 0.5rem;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #007bff;
+        }
+
+        main {
+            flex: 1; /* Main content ko available space lene ke liye */
+            padding: 20px;
+            max-width: 960px;
+            margin: 20px auto;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #e9ecef;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        .hero h2 {
+            color: #007bff;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+
+        .content h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .content p {
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #message {
+            margin-top: 15px;
+            font-weight: bold;
+            color: #28a745;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meri Pehli Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Swagat Hai!</h2>
+            <p>Yeh meri SAMMRAT GROUP PVT. LTD. dwara banayi gayi ek bahut hi simple website hai.</p>
+            <button id="myButton">Click Me!</button>
+            <p id="message"></p>
+        </section>
+
+        <section class="content">
+            <h3>Kuch Aur Jaankari</h3>
+            <p>Aap yahan par apni website ka content daal sakte hain. Jaise ki, aapki company ke bare mein, aapki services, ya koi bhi important information.</p>
+            <p>Is website ko SAMMRAT GROUP PVT. LTD. ne banaya hai.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 SAMMRAT GROUP PVT. LTD. Sabhi Adhikar Surakshit.</p>
+    </footer>
+
+    <!-- JavaScript code yahan hai, body ke end mein, taaki page pehle load ho jaaye -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Jab pura HTML document load ho jaaye, tab yeh code chalega
+
+            const myButton = document.getElementById('myButton');
+            const messageParagraph = document.getElementById('message');
+
+            if (myButton && messageParagraph) {
+                myButton.addEventListener('click', function() {
+                    // Button click hone par message change karega
+                    messageParagraph.textContent = 'Aapne button click kiya! Bahut accha!';
+                    messageParagraph.style.color = '#dc3545'; // Message ka color change karein
+                });
+            } else {
+                console.log('Button ya message paragraph nahi mila.');
+            }
+
+            console.log('Website ka JavaScript load ho gaya hai.');
+        });
+    </script>
 </body>
 </html>
