@@ -373,224 +373,29 @@ Yeh raha aapki simple website ka single index.html code:
         });
     </script>
 </body>
-</html>Auto (Smart Routing)
-Wake Word
-Bhai ak website bana naa hai too code likh doo simple saa website chaiye jada kuch nahi
-
-Namaste! Bilkul, main aapke liye ek simple website ka basic code likh deta hoon. Ismein main HTML (structure ke liye), CSS (styling ke liye), aur thoda sa JavaScript (choti si functionality ke liye) shamil karunga.
-
-Yeh code teen alag files mein hoga:
-
-index.html (website ki structure)
-style.css (website ki look)
-script.js (website ki thodi si functionality)
-Aap in files ko ek hi folder mein save kar sakte hain.
-
-1. index.html (Website ki Structure)
-Yeh aapki website ka main page hoga.
-
-<!DOCTYPE html>
-<html lang="hi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meri Simple Website</title>
-    <!-- CSS file ko link kiya hai -->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>Meri Pehli Website</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section class="hero">
-            <h2>Swagat Hai!</h2>
-            <p>Yeh meri SAMMRAT GROUP PVT. LTD. dwara banayi gayi ek bahut hi simple website hai.</p>
-            <button id="myButton">Click Me!</button>
-            <p id="message"></p>
-        </section>
-
-        <section class="content">
-            <h3>Kuch Aur Jaankari</h3>
-            <p>Aap yahan par apni website ka content daal sakte hain. Jaise ki, aapki company ke bare mein, aapki services, ya koi bhi important information.</p>
-            <p>Is website ko SAMMRAT GROUP PVT. LTD. ne banaya hai.</p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2026 SAMMRAT GROUP PVT. LTD. Sabhi Adhikar Surakshit.</p>
-    </footer>
-
-    <!-- JavaScript file ko body ke end mein link kiya hai, taaki page pehle load ho jaaye -->
-    <script src="script.js"></script>
-</body>
 </html>
-2. style.css (Website ki Styling)
-Yeh file aapki website ko accha dikhane ke liye styles add karegi. Isko index.html wali file ke same folder mein style.css naam se save karein.
-
-/* Basic Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Puri height cover karne ke liye */
-}
-
-header {
-    background: #333;
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
-}
-
-header h1 {
-    margin-bottom: 0.5rem;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav ul li a:hover {
-    color: #007bff;
-}
-
-main {
-    flex: 1; /* Main content ko available space lene ke liye */
-    padding: 20px;
-    max-width: 960px;
-    margin: 20px auto;
-    background: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-}
-
-.hero {
-    text-align: center;
-    padding: 40px 20px;
-    background-color: #e9ecef;
-    margin-bottom: 20px;
-    border-radius: 5px;
-}
-
-.hero h2 {
-    color: #007bff;
-    margin-bottom: 15px;
-}
-
-.hero p {
-    margin-bottom: 20px;
-    font-size: 1.1em;
-}
-
-.content h3 {
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.content p {
-    margin-bottom: 10px;
-}
-
-button {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1em;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-#message {
-    margin-top: 15px;
-    font-weight: bold;
-    color: #28a745;
-}
-
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
-    margin-top: 20px;
-}
-3. script.js (Website ki Functionality)
-Yeh file ek choti si JavaScript functionality add karegi. Isko index.html wali file ke same folder mein script.js naam se save karein.
-
-document.addEventListener('DOMContentLoaded', function() {
-    // Jab pura HTML document load ho jaaye, tab yeh code chalega
-
-    const myButton = document.getElementById('myButton');
-    const messageParagraph = document.getElementById('message');
-
-    if (myButton && messageParagraph) {
-        myButton.addEventListener('click', function() {
-            // Button click hone par message change karega
-            messageParagraph.textContent = 'Aapne button click kiya! Bahut accha!';
-            messageParagraph.style.color = '#dc3545'; // Message ka color change karein
-        });
-    } else {
-        console.log('Button ya message paragraph nahi mila.');
-    }
-
-    console.log('Website ka JavaScript load ho gaya hai.');
-});
 Kaise Run Karein:
-Ek naya folder banayein (jaise MeriWebsite).
-Uss folder mein upar diye gaye code ko teen alag files (index.html, style.css, script.js) mein save karein.
-index.html file ko apne web browser (Chrome, Firefox, Edge, etc.) mein double click karke open karein.
-Aapki simple website ready ho jaayegi! Aap ismein apni zaroorat ke hisaab se content aur styles add kar sakte hain. Agar aapko aur kuch chahiye ho to batana.
+Upar diye gaye saare code ko copy karein.
+Ek naya text file banayein, aur usmein yeh code paste kar dein.
+File ko index.html naam se save karein (file type "All Files" ya "Text Document" se "HTML Document" select kar lena).
+Ab, is index.html file ko apne web browser (Chrome, Firefox, Edge, etc.) mein double click karke open karein.
+Aapki simple website ek hi file se chal jaayegi! Agar koi aur help chahiye ho to zaroor batana.
 
 
 
-Yaar sirf index.html doo naa akhi mei likh kr
+Bhai yei bana diyei hoo mere baat suno ak aisa website bana naa hai jismei haam apna kooi chizz dekha sakei show case krna hai samjhei naa
 
-Theek hai bhai, bilkul! Agar aapko sirf ek hi file mein sab kuch chahiye, toh main HTML, CSS aur JavaScript ko index.html file mein hi embed kar deta hoon. Ismein <style> tags ke andar CSS aur <script> tags ke andar JavaScript hoga.
+Bhai, bilkul samajh gaya! Aapko ek showcase ya portfolio type ki website chahiye jahan aap apni cheezein dikha sakein. Main aapke liye ek aisa index.html file banata hoon jismein aap apne projects, photos, ya koi bhi cheez asani se display kar saken.
 
-Yeh raha aapki simple website ka single index.html code:
+Ismein ek header, ek main showcase area jahan aap apne items dalenge, ek "About Me" section aur ek footer hoga. CSS aur JavaScript sab ek hi file mein embedded honge.
 
+index.html (Showcase Website - Single File)
 <!DOCTYPE html>
 <html lang="hi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meri Simple Website (Single File)</title>
+    <title>Meri Showcase Website - SAMMRAT GROUP PVT. LTD.</title>
     
     <!-- CSS styles yahan hain -->
     <style>
@@ -602,555 +407,308 @@ Yeh raha aapki simple website ka single index.html code:
         }
 
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
-            background-color: #f4f4f4;
+            background-color: #f0f2f5; /* Thoda light background */
             color: #333;
             display: flex;
             flex-direction: column;
-            min-height: 100vh; /* Puri height cover karne ke liye */
+            min-height: 100vh;
         }
 
         header {
-            background: #333;
+            background: #2c3e50; /* Darker header */
             color: #fff;
-            padding: 1rem 0;
+            padding: 1.2rem 0;
             text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
         }
 
         header h1 {
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.7rem;
+            font-size: 2.5em;
         }
 
         nav ul {
             list-style: none;
             padding: 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
+            display: flex;
+            justify-content: center;
+            gap: 25px; /* Links ke beech space */
         }
 
         nav ul li a {
             color: #fff;
             text-decoration: none;
             font-weight: bold;
+            font-size: 1.1em;
+            padding: 5px 10px;
+            transition: color 0.3s ease, background-color 0.3s ease;
+            border-radius: 4px;
         }
 
         nav ul li a:hover {
-            color: #007bff;
+            color: #2c3e50;
+            background-color: #ecf0f1; /* Light hover background */
         }
 
         main {
-            flex: 1; /* Main content ko available space lene ke liye */
-            padding: 20px;
-            max-width: 960px;
-            margin: 20px auto;
+            flex: 1;
+            padding: 30px 20px;
+            max-width: 1200px; /* Thodi zyada width */
+            margin: 30px auto;
             background: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
         }
 
-        .hero {
+        section {
+            margin-bottom: 40px;
+            padding: 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        section:last-of-type {
+            border-bottom: none;
+        }
+
+        h2 {
             text-align: center;
-            padding: 40px 20px;
-            background-color: #e9ecef;
-            margin-bottom: 20px;
-            border-radius: 5px;
+            color: #007bff; /* Blue heading */
+            margin-bottom: 30px;
+            font-size: 2.2em;
         }
 
-        .hero h2 {
-            color: #007bff;
-            margin-bottom: 15px;
+        /* Hero Section */
+        .hero {
+            background-color: #e9f5ff;
+            padding: 60px 20px;
+            border-radius: 8px;
+            text-align: center;
+            margin-bottom: 40px;
         }
 
         .hero p {
-            margin-bottom: 20px;
-            font-size: 1.1em;
+            font-size: 1.2em;
+            color: #555;
+            margin-top: 15px;
         }
 
-        .content h3 {
-            color: #333;
+        /* Showcase Section */
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+            gap: 30px; /* Items ke beech space */
+        }
+
+        .portfolio-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+            padding-bottom: 20px; /* Text ke liye padding */
+        }
+
+        .portfolio-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: 200px; /* Fixed height for images */
+            object-fit: cover; /* Images ko crop karega taaki fit ho jaayen */
+            display: block;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .portfolio-item h3 {
+            color: #2c3e50;
             margin-bottom: 10px;
+            font-size: 1.5em;
+            padding: 0 15px;
         }
 
-        .content p {
-            margin-bottom: 10px;
+        .portfolio-item p {
+            font-size: 0.95em;
+            color: #666;
+            margin-bottom: 15px;
+            padding: 0 15px;
         }
 
-        button {
-            background-color: #007bff;
+        .portfolio-item .view-details {
+            display: inline-block;
+            background-color: #28a745; /* Green button */
             color: white;
             padding: 10px 20px;
             border: none;
             border-radius: 5px;
-            cursor: pointer;
-            font-size: 1em;
-            transition: background-color 0.3s ease;
-        }
-
-        button:hover {
-            background-color: #0056b3;
-        }
-
-        #message {
-            margin-top: 15px;
-            font-weight: bold;
-            color: #28a745;
-        }
-
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1rem 0;
-            margin-top: 20px;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Meri Pehli Website</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section class="hero">
-            <h2>Swagat Hai!</h2>
-            <p>Yeh meri SAMMRAT GROUP PVT. LTD. dwara banayi gayi ek bahut hi simple website hai.</p>
-            <button id="myButton">Click Me!</button>
-            <p id="message"></p>
-        </section>
-
-        <section class="content">
-            <h3>Kuch Aur Jaankari</h3>
-            <p>Aap yahan par apni website ka content daal sakte hain. Jaise ki, aapki company ke bare mein, aapki services, ya koi bhi important information.</p>
-            <p>Is website ko SAMMRAT GROUP PVT. LTD. ne banaya hai.</p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2026 SAMMRAT GROUP PVT. LTD. Sabhi Adhikar Surakshit.</p>
-    </footer>
-
-    <!-- JavaScript code yahan hai, body ke end mein, taaki page pehle load ho jaaye -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Jab pura HTML document load ho jaaye, tab yeh code chalega
-
-            const myButton = document.getElementById('myButton');
-            const messageParagraph = document.getElementById('message');
-
-            if (myButton && messageParagraph) {
-                myButton.addEventListener('click', function() {
-                    // Button click hone par message change karega
-                    messageParagraph.textContent = 'Aapne button click kiya! Bahut accha!';
-                    messageParagraph.style.color = '#dc3545'; // Message ka color change karein
-                });
-            } else {
-                console.log('Button ya message paragraph nahi mila.');
-            }
-
-            console.log('Website ka JavaScript load ho gaya hai.');
-        });
-    </script>
-</body>
-</html>Auto (Smart Routing)
-Wake Word
-Bhai ak website bana naa hai too code likh doo simple saa website chaiye jada kuch nahi
-
-Namaste! Bilkul, main aapke liye ek simple website ka basic code likh deta hoon. Ismein main HTML (structure ke liye), CSS (styling ke liye), aur thoda sa JavaScript (choti si functionality ke liye) shamil karunga.
-
-Yeh code teen alag files mein hoga:
-
-index.html (website ki structure)
-style.css (website ki look)
-script.js (website ki thodi si functionality)
-Aap in files ko ek hi folder mein save kar sakte hain.
-
-1. index.html (Website ki Structure)
-Yeh aapki website ka main page hoga.
-
-<!DOCTYPE html>
-<html lang="hi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meri Simple Website</title>
-    <!-- CSS file ko link kiya hai -->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>Meri Pehli Website</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section class="hero">
-            <h2>Swagat Hai!</h2>
-            <p>Yeh meri SAMMRAT GROUP PVT. LTD. dwara banayi gayi ek bahut hi simple website hai.</p>
-            <button id="myButton">Click Me!</button>
-            <p id="message"></p>
-        </section>
-
-        <section class="content">
-            <h3>Kuch Aur Jaankari</h3>
-            <p>Aap yahan par apni website ka content daal sakte hain. Jaise ki, aapki company ke bare mein, aapki services, ya koi bhi important information.</p>
-            <p>Is website ko SAMMRAT GROUP PVT. LTD. ne banaya hai.</p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2026 SAMMRAT GROUP PVT. LTD. Sabhi Adhikar Surakshit.</p>
-    </footer>
-
-    <!-- JavaScript file ko body ke end mein link kiya hai, taaki page pehle load ho jaaye -->
-    <script src="script.js"></script>
-</body>
-</html>
-2. style.css (Website ki Styling)
-Yeh file aapki website ko accha dikhane ke liye styles add karegi. Isko index.html wali file ke same folder mein style.css naam se save karein.
-
-/* Basic Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Puri height cover karne ke liye */
-}
-
-header {
-    background: #333;
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
-}
-
-header h1 {
-    margin-bottom: 0.5rem;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav ul li a:hover {
-    color: #007bff;
-}
-
-main {
-    flex: 1; /* Main content ko available space lene ke liye */
-    padding: 20px;
-    max-width: 960px;
-    margin: 20px auto;
-    background: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-}
-
-.hero {
-    text-align: center;
-    padding: 40px 20px;
-    background-color: #e9ecef;
-    margin-bottom: 20px;
-    border-radius: 5px;
-}
-
-.hero h2 {
-    color: #007bff;
-    margin-bottom: 15px;
-}
-
-.hero p {
-    margin-bottom: 20px;
-    font-size: 1.1em;
-}
-
-.content h3 {
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.content p {
-    margin-bottom: 10px;
-}
-
-button {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1em;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-#message {
-    margin-top: 15px;
-    font-weight: bold;
-    color: #28a745;
-}
-
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
-    margin-top: 20px;
-}
-3. script.js (Website ki Functionality)
-Yeh file ek choti si JavaScript functionality add karegi. Isko index.html wali file ke same folder mein script.js naam se save karein.
-
-document.addEventListener('DOMContentLoaded', function() {
-    // Jab pura HTML document load ho jaaye, tab yeh code chalega
-
-    const myButton = document.getElementById('myButton');
-    const messageParagraph = document.getElementById('message');
-
-    if (myButton && messageParagraph) {
-        myButton.addEventListener('click', function() {
-            // Button click hone par message change karega
-            messageParagraph.textContent = 'Aapne button click kiya! Bahut accha!';
-            messageParagraph.style.color = '#dc3545'; // Message ka color change karein
-        });
-    } else {
-        console.log('Button ya message paragraph nahi mila.');
-    }
-
-    console.log('Website ka JavaScript load ho gaya hai.');
-});
-Kaise Run Karein:
-Ek naya folder banayein (jaise MeriWebsite).
-Uss folder mein upar diye gaye code ko teen alag files (index.html, style.css, script.js) mein save karein.
-index.html file ko apne web browser (Chrome, Firefox, Edge, etc.) mein double click karke open karein.
-Aapki simple website ready ho jaayegi! Aap ismein apni zaroorat ke hisaab se content aur styles add kar sakte hain. Agar aapko aur kuch chahiye ho to batana.
-
-
-
-Yaar sirf index.html doo naa akhi mei likh kr
-
-Theek hai bhai, bilkul! Agar aapko sirf ek hi file mein sab kuch chahiye, toh main HTML, CSS aur JavaScript ko index.html file mein hi embed kar deta hoon. Ismein <style> tags ke andar CSS aur <script> tags ke andar JavaScript hoga.
-
-Yeh raha aapki simple website ka single index.html code:
-
-<!DOCTYPE html>
-<html lang="hi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meri Simple Website (Single File)</title>
-    
-    <!-- CSS styles yahan hain -->
-    <style>
-        /* Basic Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            background-color: #f4f4f4;
-            color: #333;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh; /* Puri height cover karne ke liye */
-        }
-
-        header {
-            background: #333;
-            color: #fff;
-            padding: 1rem 0;
-            text-align: center;
-        }
-
-        header h1 {
-            margin-bottom: 0.5rem;
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-
-        nav ul li a {
-            color: #fff;
             text-decoration: none;
             font-weight: bold;
-        }
-
-        nav ul li a:hover {
-            color: #007bff;
-        }
-
-        main {
-            flex: 1; /* Main content ko available space lene ke liye */
-            padding: 20px;
-            max-width: 960px;
-            margin: 20px auto;
-            background: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-
-        .hero {
-            text-align: center;
-            padding: 40px 20px;
-            background-color: #e9ecef;
-            margin-bottom: 20px;
-            border-radius: 5px;
-        }
-
-        .hero h2 {
-            color: #007bff;
-            margin-bottom: 15px;
-        }
-
-        .hero p {
-            margin-bottom: 20px;
-            font-size: 1.1em;
-        }
-
-        .content h3 {
-            color: #333;
-            margin-bottom: 10px;
-        }
-
-        .content p {
-            margin-bottom: 10px;
-        }
-
-        button {
-            background-color: #007bff;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 1em;
             transition: background-color 0.3s ease;
         }
 
-        button:hover {
-            background-color: #0056b3;
+        .portfolio-item .view-details:hover {
+            background-color: #218838;
         }
 
-        #message {
-            margin-top: 15px;
-            font-weight: bold;
-            color: #28a745;
+        /* About Section */
+        .about p {
+            text-align: center;
+            font-size: 1.1em;
+            color: #555;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Contact Section */
+        .contact p {
+            text-align: center;
+            font-size: 1.1em;
+            color: #555;
+            margin-bottom: 10px;
+        }
+        .contact a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .contact a:hover {
+            text-decoration: underline;
         }
 
         footer {
-            background: #333;
+            background: #2c3e50;
             color: #fff;
             text-align: center;
-            padding: 1rem 0;
-            margin-top: 20px;
+            padding: 1.5rem 0;
+            margin-top: 40px;
+            font-size: 0.9em;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+            nav ul li a {
+                padding: 8px 15px;
+            }
+            .portfolio-grid {
+                grid-template-columns: 1fr; /* Single column on small screens */
+            }
+            main {
+                margin: 20px auto;
+                padding: 15px;
+            }
+            h2 {
+                font-size: 1.8em;
+            }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Meri Pehli Website</h1>
+        <h1>Meri Digital Showcase</h1>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#showcase">Showcase</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="hero">
-            <h2>Swagat Hai!</h2>
-            <p>Yeh meri SAMMRAT GROUP PVT. LTD. dwara banayi gayi ek bahut hi simple website hai.</p>
-            <button id="myButton">Click Me!</button>
-            <p id="message"></p>
+        <section id="home" class="hero">
+            <h2>Swagat Hai Meri Duniya Mein!</h2>
+            <p>Yahan main apne kuch khaas kaam, projects, aur creations dikha raha hoon.</p>
+            <p>Is website ko Jarvis AI ne SAMMRAT GROUP PVT. LTD. ke liye banaya hai.</p>
         </section>
 
-        <section class="content">
-            <h3>Kuch Aur Jaankari</h3>
-            <p>Aap yahan par apni website ka content daal sakte hain. Jaise ki, aapki company ke bare mein, aapki services, ya koi bhi important information.</p>
-            <p>Is website ko SAMMRAT GROUP PVT. LTD. ne banaya hai.</p>
+        <section id="showcase">
+            <h2>Hamare Karya (My Showcase)</h2>
+            <div class="portfolio-grid">
+                <!-- Item 1 -->
+                <div class="portfolio-item">
+                    <img src="https://via.placeholder.com/400x200?text=Project+Image+1" alt="Project 1">
+                    <h3>Project Title One</h3>
+                    <p>Yeh mera pehla project hai, jismein maine ek naya design concept explore kiya hai. Ismein modern UI/UX principles ka istemal kiya gaya hai.</p>
+                    <a href="#" class="view-details" onclick="showAlert('Project Title One')">Details Dekhein</a>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="portfolio-item">
+                    <img src="https://via.placeholder.com/400x200?text=Project+Image+2" alt="Project 2">
+                    <h3>Creative Design Concept</h3>
+                    <p>Ek innovative design concept jo user engagement ko badhane ke liye banaya gaya hai. Ismein minimalist approach rakha gaya hai.</p>
+                    <a href="#" class="view-details" onclick="showAlert('Creative Design Concept')">Details Dekhein</a>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="portfolio-item">
+                    <img src="https://via.placeholder.com/400x200?text=My+Art+Piece" alt="Art Piece">
+                    <h3>Meri Kala Ka Ek Namuna</h3>
+                    <p>Yeh ek digital art piece hai jo maine banaya hai. Ismein rangon aur aakaron ka ek unique blend dikhaya gaya hai.</p>
+                    <a href="#" class="view-details" onclick="showAlert('Meri Kala Ka Ek Namuna')">Details Dekhein</a>
+                </div>
+
+                <!-- Item 4 (Aap aur bhi items add kar sakte hain) -->
+                <div class="portfolio-item">
+                    <img src="https://via.placeholder.com/400x200?text=Your+Item+4" alt="Item 4">
+                    <h3>New Idea Showcase</h3>
+                    <p>Ek naya vichar ya product jise main yahan demonstrate karna chahta hoon. Iski khaasiyat aur benefits yahan par hain.</p>
+                    <a href="#" class="view-details" onclick="showAlert('New Idea Showcase')">Details Dekhein</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>Mere Baare Mein</h2>
+            <p>Main ek passionate creator hoon jo naye ideas aur projects par kaam karna pasand karta hoon. Mera maqsad innovative solutions provide karna hai. Is website ke through main apne kaam ko duniya ke saamne pesh karna chahta hoon.</p>
+            <p>Yeh website SAMMRAT GROUP PVT. LTD. dwara banayi gayi Jarvis AI ki madad se tayyar ki gayi hai.</p>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Mujhse Sampark Karein</h2>
+            <p>Agar aapko mere kaam mein ruchi hai ya aap kisi project ke liye discuss karna chahte hain, to mujhse contact karein:</p>
+            <p>Email: <a href="mailto:your_email@example.com">your_email@example.com</a></p>
+            <p>Phone: <a href="tel:+919876543210">+91 98765 43210</a></p>
+            <p>Website: <a href="https://sammratgroup.gt.tc">sammratgroup.gt.tc</a></p>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 SAMMRAT GROUP PVT. LTD. Sabhi Adhikar Surakshit.</p>
+        <p>&copy; 2026 Meri Digital Showcase. Powered by SAMMRAT GROUP PVT. LTD. All rights reserved.</p>
     </footer>
 
-    <!-- JavaScript code yahan hai, body ke end mein, taaki page pehle load ho jaaye -->
+    <!-- JavaScript code yahan hai -->
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Jab pura HTML document load ho jaaye, tab yeh code chalega
+        // Simple function to show an alert when 'Details Dekhein' is clicked
+        function showAlert(itemName) {
+            alert('Aapne "' + itemName + '" ke details dekhne ke liye click kiya hai! Yahan aur jaankari aayegi.');
+        }
 
-            const myButton = document.getElementById('myButton');
-            const messageParagraph = document.getElementById('message');
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav ul li a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
 
-            if (myButton && messageParagraph) {
-                myButton.addEventListener('click', function() {
-                    // Button click hone par message change karega
-                    messageParagraph.textContent = 'Aapne button click kiya! Bahut accha!';
-                    messageParagraph.style.color = '#dc3545'; // Message ka color change karein
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
                 });
-            } else {
-                console.log('Button ya message paragraph nahi mila.');
-            }
-
-            console.log('Website ka JavaScript load ho gaya hai.');
+            });
         });
+
+        console.log('Showcase Website ka JavaScript load ho gaya hai.');
     </script>
 </body>
-</html>
+    </html>
